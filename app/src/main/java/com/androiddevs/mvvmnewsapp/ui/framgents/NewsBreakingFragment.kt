@@ -11,7 +11,7 @@ import com.androiddevs.mvvmnewsapp.R
 /**
  * A simple [Fragment] subclass.
  */
-class NewsBankingFragment : Fragment() {
+class NewsBreakingFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/app_navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/app_navigation"
+    app:startDestination="@id/newsBreakingFragment">
 
+    <fragment
+        android:id="@+id/newsBreakingFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.framgents.NewsBreakingFragment"
+        android:label="NewsBreakingFragment" >
+        <action
+            android:id="@+id/action_newsBreakingFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.framgents.ArticleFragment"
+        android:label="ArticleFragment" />
+    <fragment
+        android:id="@+id/newsSavedFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.framgents.NewsSavedFragment"
+        android:label="NewsSavedFragment" >
+        <action
+            android:id="@+id/action_newsSavedFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsSearchFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.framgents.NewsSearchFragment"
+        android:label="NewsSearchFragment" >
+        <action
+            android:id="@+id/action_newsSearchFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
 </navigation>
