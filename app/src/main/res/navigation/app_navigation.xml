@@ -1,34 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/app_navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
     app:startDestination="@id/newsBreakingFragment">
-
+    <!--BreakingNewsFragment-->
     <fragment
         android:id="@+id/newsBreakingFragment"
         android:name="com.androiddevs.mvvmnewsapp.ui.framgents.NewsBreakingFragment"
-        android:label="NewsBreakingFragment" >
+        android:label="NewsBreakingFragment">
         <action
             android:id="@+id/action_newsBreakingFragment_to_articleFragment"
-            app:destination="@id/articleFragment" />
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
+
+    <!--ArticleFragment-->
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.androiddevs.mvvmnewsapp.ui.framgents.ArticleFragment"
         android:label="ArticleFragment" />
+
+    <!--NewsSavedFragment-->
     <fragment
         android:id="@+id/newsSavedFragment"
         android:name="com.androiddevs.mvvmnewsapp.ui.framgents.NewsSavedFragment"
-        android:label="NewsSavedFragment" >
+        android:label="NewsSavedFragment">
         <action
             android:id="@+id/action_newsSavedFragment_to_articleFragment"
-            app:destination="@id/articleFragment" />
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
+
+    <!--NewsSearchFragment-->
     <fragment
         android:id="@+id/newsSearchFragment"
         android:name="com.androiddevs.mvvmnewsapp.ui.framgents.NewsSearchFragment"
-        android:label="NewsSearchFragment" >
+        android:label="NewsSearchFragment">
         <action
             android:id="@+id/action_newsSearchFragment_to_articleFragment"
-            app:destination="@id/articleFragment" />
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 </navigation>
